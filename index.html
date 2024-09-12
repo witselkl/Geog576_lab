@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello, world!</title>
+  <title>Hello, Mapy</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+
   <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
-<script src="https://js.arcgis.com/4.25/"></script>
+  <script src="https://js.arcgis.com/4.25/"></script>
 
 <script>  
   require([
   "esri/config", 
   "esri/Map", 
   "esri/views/MapView"
-  ], function(esriConfig, Map, MapView) {   
+  ], function (esriConfig, Map, MapView) {   
   
 
   esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurLnZ1SKuVjcmhuYy7ZgFo7nRkeaex5Pyse90hA3_-twQ9aZh3ukW7y7j9oxVbinOUkZTkuP5jIlAEtH5e_7DHP0liWf6tn6QTxetcFnI3rIi0xPzkoaEPekxL0-rDUwsAdMQRuux-0uuNMTE7e_lNeG45pvgeuCSr5abahKFzvuUJ-ewQsq9pGAJYlLcwozKzYElZv8h7OlHzgxN1NcRAiWme1AEaa5tzqVZug9kV8C5AT1_64sbOrZQ";
   const map = new Map({ 
-   basemap: "arcgis-topographic" // Basemap layer service 
- });
+      basemap: "arcgis-topographic" // Basemap layer service 
+    });
  
-  const view = new MapView({
-    map: map,
-    center: [-97.7431, 30.2672], // Longitude, latitude
-    zoom: 13, // Zoom level
-    container: "viewDiv" // Div element
-  }); 
-});  
- </script>
+    const view = new MapView({
+      map: map,
+      center: [-97.7431, 30.2672], // Longitude, latitude
+      zoom: 13, // Zoom level
+      container: "viewDiv" // Div element
+     }); 
+  });  
+</script>
 
 <style>  
   html,  
@@ -38,13 +39,15 @@
     margin: 0;  
     height: 100%;  
     width: 100%;  
-    }  
+  }  
 </style> 
 
 
 </head>
 <body>
-  <h1>Hello, world! I am using Git to push!</h1>
+
+  <!--<h1>Hello, world! I am using Git to push!</h1> -->
   <div id="viewDiv"></div>
+
 </body>
 </html>
